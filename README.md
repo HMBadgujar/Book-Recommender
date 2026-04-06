@@ -1,4 +1,4 @@
-### 📚 Book Recommender System: An End-to-End Machine Learning Project
+# 📚 Book Recommender System: An End-to-End Machine Learning Project
 
 ## 📖 Project Overview
 
@@ -31,33 +31,40 @@ You will need to have Python and pip installed on your machine before running th
 Follow these steps to set up and run the Book Recommender System locally.
 
 1. Clone the Repository
-
+```bash
 git clone https://github.com/HMBadgujar/Book-Recommender.git
 cd Book-Recommender
+```
 
 2. Set Up a Virtual Environment (Recommended)
 This helps keep your dependencies isolated.
-
+```bash
 python -m venv venv
-# Windows:
+```
+### Windows:
+```bash
 venv\Scripts\activate
-# macOS/Linux:
+```
+### macOS/Linux:
+```bash
 source venv/bin/activate
-
+```
 3. Install Required Dependencies
-
+```bash
 pip install -r requirements.txt
+```
 (Note: The requirements.txt file includes flask, gunicorn, numpy, pandas, scikit-learn, and pickle5.)
 
-4. Run the Flask Application
-   
+4. Run the Flask Application   
 python app.py
 After the server starts, open your web browser and navigate to:
 http://127.0.0.1:5000/
 
 5. Using the Recommender
 
-Home Page: Browse the Top 50 Books grid, featuring cover images, titles, and average ratings.
+Home Page: 
+
+Browse the Top 50 Books grid, featuring cover images, titles, and average ratings.
 
 Recommend Page:
 
