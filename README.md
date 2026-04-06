@@ -8,21 +8,21 @@ The core of this project is built upon the Book-Crossing dataset, a classic set 
 
 ## ⭐ Key Features
 
-Popularity-Based Recommender: Displays the top 50 books with the highest average ratings on the platform, filtered to ensure a minimum number of votes (at least 250 ratings) for reliable suggestions.
+1. Popularity-Based Recommender: Displays the top 50 books with the highest average ratings on the platform, filtered to ensure a minimum number of votes (at least 250 ratings) for reliable suggestions.
 
-Collaborative Filtering Recommender: Suggests 5 similar books based on a user-provided title. This uses an Item-Item approach, calculating the Cosine Similarity between different books based on the collective rating patterns of experienced users.
+2. Collaborative Filtering Recommender: Suggests 5 similar books based on a user-provided title. This uses an Item-Item approach, calculating the Cosine Similarity between different books based on the collective rating patterns of experienced users.
 
-Flask Web UI: A simple and intuitive dark-themed web interface for browsing popular books and searching for recommendations.
+3. Flask Web UI: A simple and intuitive dark-themed web interface for browsing popular books and searching for recommendations.
 
 ## 🛠️ Tech Stack & Prerequisites
 
-Language: Python 3.9+
+1. Language: Python 3.9+
 
-Machine Learning / Data Processing: Jupyter Notebook, NumPy, Pandas, Scikit-Learn (specifically cosine_similarity)
+2. Machine Learning / Data Processing: Jupyter Notebook, NumPy, Pandas, Scikit-Learn (specifically cosine_similarity)
 
-Web Framework: Flask
+3. Web Framework: Flask
 
-Frontend: HTML, CSS, Bootstrap
+4. Frontend: HTML, CSS, Bootstrap
 
 You will need to have Python and pip installed on your machine before running this project.
 
@@ -62,27 +62,27 @@ http://127.0.0.1:5000/
 
 5. Using the Recommender
 
-Home Page: 
+a. Home Page: 
 
 Browse the Top 50 Books grid, featuring cover images, titles, and average ratings.
 
-Recommend Page:
+b. Recommend Page:
 
-Click the "Recommend" link in the navigation bar.
+i. Click the "Recommend" link in the navigation bar.
 
-Enter the exact title of a popular book (e.g., "The Da Vinci Code," "1984," or "Harry Potter and the Chamber of Secrets").
+ii. Enter the exact title of a popular book (e.g., "The Da Vinci Code," "1984," or "Harry Potter and the Chamber of Secrets").
 
-Click "Submit."
+iii. Click "Submit."
 
-The system will generate and display 5 recommended books that have similar voting patterns.
+iv. The system will generate and display 5 recommended books that have similar voting patterns.
 
 (Note: The system is trained on specific books that met a minimum popularity threshold, so it will only be able to recommend based on titles it "knows" from the cleaned dataset.)
 
 ## 📊 Dataset Information
 The project uses the Book-Crossing Dataset, which consists of three files:
 
-Books.csv: Contains details about books (ISBN, Title, Author, Year, Publisher, and Image URLs).
+1. Books.csv: Contains details about books (ISBN, Title, Author, Year, Publisher, and Image URLs).
 
-Users.csv: Contains user profiles (User-ID, Location, Age).
+2. Users.csv: Contains user profiles (User-ID, Location, Age).
 
-Ratings.csv: Contains book ratings, provided by users to specific books (User-ID, ISBN, Book-Rating from 0-10).
+3. Ratings.csv: Contains book ratings, provided by users to specific books (User-ID, ISBN, Book-Rating from 0-10).
